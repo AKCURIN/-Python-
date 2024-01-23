@@ -1,0 +1,5 @@
+population=int(input())
+if population%2!=0:
+    print(population//2+population%2)
+else:
+    print(population//2)
