@@ -1,0 +1,4 @@
+x=int(input())
+h=x//60
+min=x%60
+print(f'{x} мин - это {h} час {min} минут.')
