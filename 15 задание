@@ -1,0 +1,5 @@
+number=int(input())
+previous=number-1
+nex=number+1
+print(f'Следующее за числом {number} число: {nex}')
+print(f'Для числа {number} предыдущее число: {previous}')
