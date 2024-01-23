@@ -1,0 +1,5 @@
+place=int(input())
+a=36-place
+b=a//4
+c=9-b
+print(c)
