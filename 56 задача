@@ -1,0 +1,27 @@
+s=int(input())
+if 1<=s<=10:
+    if s%2==0:
+        print('черный')
+    else:
+        print('красный ')
+elif 11<=s<=18:
+    if s%2==0:
+        print('красный')
+    else:
+        print('черный ')   
+elif 19<=s<=28:
+    if s%2==0:
+        print('черный')
+    else:
+        print('красный ')   
+elif 29<=s<=36:
+    if s%2==0:
+        print('красный')
+    else:
+        print('черный ') 
+elif(s==0):
+    print('зеленый')
+elif 0<s or s>36:
+    print('ошибка ввода')   
+else:
+    print('ошибка ввода') 
