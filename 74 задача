@@ -1,0 +1,8 @@
+a=float(input())
+b=float(input())
+c=float(input())
+m=max(a,b,c)
+mi=min(a,b,c)
+print(int(m))
+print(int(a+b+c-m-mi))
+print(int(mi))
