@@ -1,0 +1,5 @@
+age=float(input())
+if age<3:
+    print(age*10.5)
+else:
+    print(21.0+(age-2)*4)   
