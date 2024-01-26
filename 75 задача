@@ -1,0 +1,10 @@
+x=int(input())
+r=x//100
+g=x//10%10
+p=x%10
+a=max(r,g,p)
+b=min(r,g,p)
+if a-b==(r+g+p)-(a+b):
+    print('Число интересное')
+else:
+    print('Число неинтересное')
