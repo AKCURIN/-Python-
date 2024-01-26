@@ -1,0 +1,3 @@
+x=float(input())
+x2=int(x)
+print(int((x-x2)*10))
