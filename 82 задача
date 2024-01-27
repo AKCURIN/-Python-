@@ -1,0 +1,8 @@
+a,b,c=input(),input(),input()
+m=max(len(a),len(b),len(c))
+mi=min(len(a),len(b),len(c))
+x=(len(a)+len(b)+len(c))-mi-m
+if x-mi==m-x:
+    print("YES")
+else:
+    print("NO")
