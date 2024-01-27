@@ -1,0 +1,20 @@
+a=input()
+a1=len(a)
+b=input()
+b1=len(b)
+c=input()
+c1=len(c)
+m=max(len(a),len(b),len(c))
+mi=min(len(a),len(b),len(c))
+if a1==mi:
+    print(a)
+elif b1==mi:
+    print(b)
+elif c1==mi:
+    print(c)
+if a1==m:
+    print(a)
+elif b1==m:
+    print(b)
+elif c1==m:
+    print(c)   
