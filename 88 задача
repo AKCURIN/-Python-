@@ -1,0 +1,8 @@
+import math
+a=float(input())
+b=float(input())
+arif=(a+b)/2
+gar=math.sqrt(a*b)
+geo=(2*a*b)/(a+b)
+kva=math.sqrt((a**2+b**2)/2)
+print(arif,gar,geo,kva,sep='\n')
