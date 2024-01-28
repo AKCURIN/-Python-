@@ -1,0 +1,5 @@
+from math import ceil, floor
+x=float(input())
+x1=ceil(x)
+x2=floor(x)
+print(x1+x2)
