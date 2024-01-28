@@ -1,0 +1,8 @@
+for i in range(6):
+    print('AAA',sep='\n')
+for i in range(5):
+    print('BBBB',sep='\n')
+print('E')    
+for i in range(9):
+    print('TTTTT',sep='\n')    
+print('G')     
