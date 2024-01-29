@@ -1,0 +1,9 @@
+n,buf,buf2=int(input()),0,1
+for i in range(0,n):
+    s=int(input())
+    if s > buf:
+        buf2 = buf
+        buf = s
+    elif s > buf2:
+        buf2 = s 
+print(buf,buf2,sep='\n')   
