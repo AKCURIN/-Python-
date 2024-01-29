@@ -1,0 +1,6 @@
+treker='YES'
+for i in range(0,10):
+    x=int(input())
+    if x%2!=0:
+        treker='NO'
+print(treker)
