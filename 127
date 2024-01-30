@@ -1,0 +1,7 @@
+x=int(input())
+kms=x%10
+while x>0:
+    kms=x%10
+    if x>9 and x<100:
+        print(kms)
+    x=x//10
