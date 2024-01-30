@@ -1,0 +1,7 @@
+x=int(input())
+su=0
+while x>0 and x<6:
+    if x==5:
+        su+=1
+    x=int(input())
+print(su)   
