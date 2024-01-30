@@ -1,0 +1,8 @@
+x=int(input())
+z=x%10
+v="YES"
+while x>0:
+    if x%10!=z:
+        v="NO"
+    x=x//10    
+print(v)   
