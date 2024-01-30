@@ -1,0 +1,16 @@
+x=int(input())
+su=0
+kol=len(str(x))
+pr=1
+sr=0
+per=0
+st=x%10
+while x>0:
+    su+=x%10
+    pr*=x%10
+    x=x//10
+    if x<10 and x!=0:
+        per=x
+st+=per        
+sr=su/kol    
+print(su,kol,pr,sr,per,st,sep="\n")
