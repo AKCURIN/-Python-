@@ -1,0 +1,10 @@
+x=int(input())
+ma,mi=0,9
+while x>0:
+    if x%10>ma:
+        ma=x%10
+    if x%10<mi:
+        mi=x%10
+    x=x//10   
+print("Максимальная цифра равна",ma)       
+print("Минимальная цифра равна",mi) 
