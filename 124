@@ -1,0 +1,6 @@
+x=int(input())
+c=""
+while x>0:
+    c+=str(x%10)
+    x=x//10
+print(c)   
