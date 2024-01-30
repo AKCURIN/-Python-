@@ -1,0 +1,10 @@
+x=int(input())
+b=x%10
+x=x//10
+flag="YES"
+while x>0:
+    if x%10-b<0:
+        flag="NO"  
+    b=x%10    
+    x=x//10   
+print(flag) 
