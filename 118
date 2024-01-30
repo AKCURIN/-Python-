@@ -1,0 +1,5 @@
+a,s=input(),0
+while a not in ('стоп', 'хватит', 'достаточно'):
+    s+=1
+    a=input()
+print(s)   
