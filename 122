@@ -1,0 +1,20 @@
+x=int(input())
+coin=0
+while x>=1:
+    if x//25>0:
+        bb=x//25
+        coin+=bb
+        x-=bb*25
+    elif x//10>0:
+        bb=x//10
+        coin+=bb
+        x-=bb*10 
+    elif x//5>0:
+        bb=x//5
+        coin+=bb
+        x-=bb*5
+    elif x//1>0:
+        bb=x//1
+        coin+=bb
+        x-=bb*1
+print(coin)  
