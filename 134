@@ -1,0 +1,6 @@
+s = 0 #1
+for i in range(7): #(1,7)
+    n = int(input()) #add int(
+    if n % 2 == 0: #add n
+        s = s + n
+print(s)
