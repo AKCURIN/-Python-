@@ -1,0 +1,10 @@
+from math import ceil
+x=int(input())
+for i in range(ceil(x/2)):
+    for j in range(i+1):
+        print("*",end="")
+    print()       
+for i in range(ceil(x/2)-1,0,-1):
+    for j in range(i):
+        print("*",end="")
+    print() 
