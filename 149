@@ -1,0 +1,10 @@
+x=int(input())
+c=0
+while x>9:
+    c=0
+    for i in range(0,len(str(x))):
+        buf=x%10
+        c+=buf
+        x=x//10
+    x=c
+print(x)  
