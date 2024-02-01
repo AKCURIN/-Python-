@@ -1,0 +1,24 @@
+n=int(input())
+count_three=0
+count_last_n=0
+chetn=0
+summ_bol_five=0
+pro_bol_sev=1
+count_z_f=0
+name_last_n=n%10
+while n>0:
+    buf=n%10
+    if buf==3:
+        count_three+=1
+    if buf==name_last_n:
+        count_last_n+=1
+    if buf%2==0:
+        chetn+=1
+    if buf>5:
+        summ_bol_five+=buf
+    if buf>7:
+        pro_bol_sev*=buf
+    if buf==0 or buf==5:
+        count_z_f+=1
+    n=n//10
+print(count_three, count_last_n, chetn, summ_bol_five, pro_bol_sev,count_z_f, sep="\n")    
