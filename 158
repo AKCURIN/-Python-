@@ -1,0 +1,6 @@
+for x in range(1, 33):
+    for y in range(1, 33):
+        for z in range(1, 33):
+            for d in range(1, 33):
+                if (x**3+y**3==z**3+d**3) and (x != y and x != z and x != d and y != z and y != d and z != d):
+                    print('x =', x, 'y =', y,"itog = ",x**3+y**3)
