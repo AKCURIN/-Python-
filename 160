@@ -1,0 +1,4 @@
+I=input()
+F=input()
+O=input()
+print(F[0],I[0],O[0],sep="")
