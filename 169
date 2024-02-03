@@ -1,0 +1,7 @@
+import math
+s=input()
+l=len(s)
+vv=l/2
+d=math.ceil(vv)
+print(s[d:],end="")
+print(s[:d])
