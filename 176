@@ -1,0 +1,8 @@
+s=input()
+d=0
+traal=s.endswith('.com')
+slava=s.endswith('.ru')                
+if slava==True or traal==True:
+    print('YES')
+else:
+     print('NO')
