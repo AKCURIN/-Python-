@@ -1,0 +1,6 @@
+a=input()
+dlb_t=0
+for i in a:
+    if i in '1234567890':
+        dlb_t+=1
+print(dlb_t) 
