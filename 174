@@ -1,0 +1,7 @@
+zbs=0
+n=int(input())
+for i in range(n):
+    s=input()
+    if s.count('11')>=3:
+        zbs+=1
+print(zbs)   
