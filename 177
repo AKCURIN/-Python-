@@ -1,0 +1,9 @@
+s=input()
+max=0
+for i in s:
+    bui=0
+    bui=s.count(i)
+    if bui>=max:
+        max=bui
+        joke=i
+print(joke) 
