@@ -1,0 +1,8 @@
+s=input()
+db=s.count("f")
+if db>1:
+    print(s.find('f'),s.rfind('f'))
+elif db==1:
+    print(s.find('f'))
+else:
+    print('NO')
