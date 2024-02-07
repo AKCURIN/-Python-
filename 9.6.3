@@ -1,0 +1,7 @@
+sdv=int(input())
+a=input()
+for i in a:
+    d=ord(i)-sdv
+    if d<97:
+        d+=26
+    print(chr(d),end="")
