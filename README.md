@@ -1,5 +1,5 @@
-## "Generation Python": course for beginners
+## Python
 
 ### Часть 2
 
-9.5 [Методы строк](Python/9.5.3.1)
+9.5 [Методы строк](9.5.3.1)
