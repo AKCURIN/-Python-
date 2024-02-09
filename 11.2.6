@@ -1,0 +1,10 @@
+rainbow = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet']
+for i in range(0,len(rainbow)):
+    if rainbow[i]=="Green":
+        rainbow.pop(i)
+        rainbow.insert(i,"Зеленый")
+    if rainbow[i]=="Violet":
+        rainbow.pop(i)
+        rainbow.insert(i,"Фиолетовый")    
+
+print(rainbow)
