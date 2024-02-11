@@ -1,0 +1,11 @@
+a=[]
+b=[]
+n=int(input())
+for i in range(n):
+    a.append(input())
+k=int(input())     
+for i in range(n):
+    for j in range(len(a[i])):
+        if j==k-1:
+            b.append(a[i][j])
+print(*b,sep="")   
