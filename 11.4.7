@@ -1,0 +1,16 @@
+n = int(input())
+a = []
+b = []
+c = []
+d = []
+for i in range(n):
+    x = 0
+    x = int(input())
+    a.append(x)
+    if x < 0:
+        b.append(x)
+    elif x == 0:
+        c.append(x)
+    elif x > 0:
+        d.append(x)
+print(*b, *c, *d, sep="\n")    
