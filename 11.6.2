@@ -1,0 +1,10 @@
+a = [int(i) for i in input().split()]
+s = max(a)
+mi = min(a)
+i_s = a.index(s)
+i_mi = a.index(mi)
+#a.insert(i_s,mi)
+#a.insert(i_mi,s)
+a[i_s] = mi
+a[i_mi] = s
+print(*a)
