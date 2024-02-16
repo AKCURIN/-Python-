@@ -1,0 +1,12 @@
+a = []
+s = input()
+s = int(s[1:])#Удаляем решётку которую вводят в первой строке для обозначения количества строк
+for i in range(s):
+    a.append(input())    #Вводим предложение и вносим его в список а
+for j in range(s):    #Перебераем строки то есть елементы списка а
+    if a[j].count("#") == 1:
+        dolet = a[j].index("#")
+        a[j]=a[j][:dolet]
+        print(a[j].rstrip())
+    else:
+        print(a[j])
