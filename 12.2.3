@@ -1,6 +1,6 @@
-a = [i for i in input().split()]
-d = ('+'.join(a))
+a = [i for i in input().split()]    #Вводим список
+d = ('+'.join(a))    #новый список в котором между элемнтами + стоит 
 s = 0
 for i in range(len(a)):
-    s+=int(a[i])
-print(d,s,sep="=") 
+    s+=int(a[i])    #переводим  в целые число и складываем к переменной s
+print(d,s,sep="=") #Выводим всё по красоте
