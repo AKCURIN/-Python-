@@ -1,0 +1,17 @@
+a = [i for i in input().split("-")]
+d = 0
+s = []
+trafaret_1 = [1, 3, 3, 4]
+trafaret_2 = [3, 3, 4]
+b="".join(a)
+if b.isdigit():
+    for i in range(len(a)):
+        s.append(len(a[i]))
+    if s == trafaret_1 and b[0] in '7':
+                 print("YES")
+    elif s == trafaret_2 : 
+                 print("YES")
+    else:
+                 print("NO")
+else:
+    print("NO")
