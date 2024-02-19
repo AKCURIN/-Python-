@@ -1,0 +1,14 @@
+# объявление функции
+def print_digit_sum(num):
+    ss = 0
+    while num>0:
+        bufer=num%10
+        ss+=bufer
+        num=num//10
+    print(ss)   
+
+# считываем данные
+n = int(input())
+
+# вызываем функцию
+print_digit_sum(n)
