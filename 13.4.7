@@ -1,0 +1,8 @@
+n = int(input())
+big = []    #Здесь первоначальные все списки
+result = [] #Здесь будут уже отсортированные списки все!
+for i in range(n):
+    a = [int(i) for i in input().split()]
+    big+=a
+big.sort()    
+print(*big)
