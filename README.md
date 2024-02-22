@@ -107,3 +107,5 @@
 13.4.6[Merge lists 1](13.4.6)
 
 13.4.7[Merge lists 2](13.4.7)
+
+13.5.2[Is a Number Prime? 🌶️](13.5.2)
