@@ -1,0 +1,19 @@
+# объявление функции
+def is_valid_password(password):
+    a = [int(i) for i in password.split(":")]
+    m_g = 0
+    if len(a)==3:
+        for i in range(1):
+            if str(a[0])==str(a[0])[::-1]:
+                m_g+=1
+            if len([i for i in range(1,a[1]+1) if a[1]%i==0])==2:
+                m_g+=1
+            if a[2]%2==0:
+                m_g+=1
+        return m_g==3   #Возвращает True если и правда m_g равно 3-м     
+    return False            
+# считываем данные
+psw = input()
+
+# вызываем функцию
+print(is_valid_password(psw))
