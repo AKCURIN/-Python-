@@ -1,14 +1,14 @@
 # объявление функции
 def is_valid_password(password):
-    a = [int(i) for i in password.split(":")]
+    a = [int(i) for i in password.split(":")] Переводим код который получили в целые числа и разделяем числа если между ними стоит двоеточие.
     m_g = 0
     if len(a)==3:
-        for i in range(1):
-            if str(a[0])==str(a[0])[::-1]:
+        for i in range(1):    #По идее можно было и без цикла for
+            if str(a[0])==str(a[0])[::-1]:    #Проверяем на палиндром число
                 m_g+=1
-            if len([i for i in range(1,a[1]+1) if a[1]%i==0])==2:
+            if len([i for i in range(1,a[1]+1) if a[1]%i==0])==2:    #Проверяем чтобы число было простое
                 m_g+=1
-            if a[2]%2==0:
+            if a[2]%2==0:    #Проверяем 3-е число чтобы оно было чётным
                 m_g+=1
         return m_g==3   #Возвращает True если и правда m_g равно 3-м     
     return False            
