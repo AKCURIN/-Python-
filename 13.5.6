@@ -1,0 +1,16 @@
+# объявление функции
+def is_palindrome(text):
+    f = []
+    dd=text.lower()
+    for i in range(len(dd)):
+        if dd[i] not in ",.!?- ":
+            f.append(dd[i])
+    if f==f[::-1]:       
+        return True
+    else:
+        return False
+# считываем данные
+txt = input()
+
+# вызываем функцию
+print(is_palindrome(txt))
