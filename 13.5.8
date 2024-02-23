@@ -1,8 +1,8 @@
 # объявление функции
 def is_correct_bracket(text):
-    while '()' in text:
-        text = text.replace ('()','')
-    return not text
+    while '()' in text:     #Пока  в нашем списке есть полная пара мы работаем
+        text = text.replace ('()','')    #заменяем пару скобок на пустоту фактически удаляем их
+    return not text    #Вернёт тру если наш список уже пуст
 # считываем данные
 txt = input()
 
