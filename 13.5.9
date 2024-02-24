@@ -1,0 +1,25 @@
+# объявление функции
+def convert_to_python_case(text):
+    counter = 0
+    d = []
+    t = []
+    a = [i for i in text if i.isupper()]
+    b = []
+    d=list(text)
+    for i in range(0,len(d)):
+        if d[i] in a:
+            b.append(i)    #Индексы где заглавные буквы
+    o = text.lower()  #Уменьшаем строку
+    t=list(o)
+    for i in b[1:]:
+        t.insert(i+counter,"_")
+        counter+=1
+        sos="".join(t)  #соединяем элементы списка в один элемент
+    return sos  
+        
+
+# считываем данные
+txt = input()
+
+# вызываем функцию
+print(convert_to_python_case(txt))
