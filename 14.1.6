@@ -1,0 +1,10 @@
+# объявление функции
+def is_magic(date):
+    a,b,c = [int(i) for i in date.split(".")]
+    return a*b==c%100
+
+# считываем данные
+date = input()
+
+# вызываем функцию
+print(is_magic(date))
