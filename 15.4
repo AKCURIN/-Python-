@@ -1,0 +1,45 @@
+from random import *
+
+DIGITS = '0123456789'
+LOWERCASE_LETTERS = 'abcdefghijklmnopqrstuvwxyz'
+UPPERCASE_LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+PUNCTUATION = '!#$%&*+-=?@^_'
+EXCEPTIONS = 'iI1LoO0l'
+
+chars = ""
+
+pwd_quantity = int(input('Сколько паролей вам нужно сгенерировать? - '))
+pwd_len = int(input('Какой длины должен быть пароль? - '))
+pwd_digits = input('Включать ли в пароль цифры от 0 до 9? (Да / Нет) - ')
+pwd_uppercase = input('Включать ли в пароль прописные буквы? (Да / Нет) - ')
+pwd_lowercase = input('Включать ли в пароль строчные буквы? (Да / Нет) - ')
+pwd_punctuation = input('Включать ли в пароль символы "!#$%&*+-=?@^_"? (Да / Нет) - ')
+pwd_exceptions = input('Исключать ли неоднозначные символы "il1Lo0O"? (Да / Нет) - ')
+
+if pwd_digits.lower() == "да":
+    chars += DIGITS
+if pwd_uppercase.lower() == "да":
+    chars += UPPERCASE_LETTERS
+if pwd_lowercase.lower() == "да":
+    chars += LOWERCASE_LETTERS
+if pwd_punctuation.lower() == "да":
+    chars += PUNCTUATION
+if pwd_exceptions.lower() == "да":
+    chars += EXCEPTIONS
+
+
+def password_generator():
+    listt = []
+    count = 0
+    for i in range(int(pwd_quantity)):
+        listt.append(sample(chars, int(pwd_len)))
+    for i in listt:
+        count += 1
+        print(count, "Пароль -")
+        for j in i:
+            print(j, end="")
+        print()
+
+
+
+password_generator()
