@@ -146,4 +146,4 @@
 
 ### Часть 4
 
-4.2.6[Вложенные списки](https://github.com/AKCURIN/-Python-/tree/900b5652f09485fe6b31502f44807baa005c4b76/Advanced%20course)
+4.2.6[Вложенные списки](https://github.com/AKCURIN/-Python-/blob/900b5652f09485fe6b31502f44807baa005c4b76/Advanced%20course/4.2.6)
