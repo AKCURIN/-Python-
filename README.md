@@ -142,7 +142,7 @@
 
 15.6[BOH](15.6)
 
-## Advanced course
+## Python/Advanced course
 
 ### Часть 4
 
