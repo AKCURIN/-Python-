@@ -150,6 +150,8 @@
 
 2.2.1[Координатные четверти](https://github.com/AKCURIN/-Python-/blob/6f97e6e960ba074c1e3c9fd5249fde203c5d8222/Advanced%20course/2.2.1)
 
+2.2.3[Назад, вперёд и наоборот](https://github.com/AKCURIN/-Python-/blob/3c25e3d0a45055b42b30a8def25883a031bd19d4/Advanced%20course/2.2.3)
+
 ### Часть 4
 
 4.2.6[Вложенные списки](https://github.com/AKCURIN/-Python-/blob/900b5652f09485fe6b31502f44807baa005c4b76/Advanced%20course/4.2.6)
