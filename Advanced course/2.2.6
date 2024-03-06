@@ -1,0 +1,14 @@
+n = int(input())
+a = []
+vv = "НЕТ"
+for k in range(n):
+    a.append(int(input()))
+cic = int(input())
+for i in range(n):
+    for j in range(n):
+        if i!=j:
+            if a[i]*a[j]==cic:
+                vv = "ДА"
+                break
+               
+print(vv)
