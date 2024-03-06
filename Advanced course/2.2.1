@@ -1,0 +1,21 @@
+n = int(input())
+first = 0
+second = 0
+third = 0
+fourth = 0  
+for i in range(n):
+    #c_1,c_2=int(input()),int(input())
+    c_1,c_2 = [int(i) for i in input().split()]
+    if c_1>0 and c_2>0:
+        first+=1
+    if c_1<0 and c_2>0:
+        second+=1
+    if c_1<0 and c_2<0:
+        third+=1 
+    if c_1>0 and c_2<0:
+        fourth+=1
+    c_1,c_2=0,0    
+print(f"Первая четверть: {first}")
+print(f"Вторая четверть: {second}")
+print(f"Третья четверть: {third}")
+print(f"Четвертая четверть: {fourth}")  
