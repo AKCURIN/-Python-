@@ -152,6 +152,8 @@
 
 2.2.3[Назад, вперёд и наоборот](https://github.com/AKCURIN/-Python-/blob/3c25e3d0a45055b42b30a8def25883a031bd19d4/Advanced%20course/2.2.3)
 
+2.2.4[Сдвиг в развитии]((https://github.com/AKCURIN/-Python-/blob/e2e6f92a745ef6b6880273307d90d3627443df01/Advanced%20course/2.2.4))
+
 ### Часть 4
 
 4.2.6[Вложенные списки](https://github.com/AKCURIN/-Python-/blob/900b5652f09485fe6b31502f44807baa005c4b76/Advanced%20course/4.2.6)
