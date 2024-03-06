@@ -154,6 +154,8 @@
 
 2.2.4[Сдвиг в развитии](https://github.com/AKCURIN/-Python-/blob/e2e6f92a745ef6b6880273307d90d3627443df01/Advanced%20course/2.2.4)
 
+2.2.6[Произведение чисел](https://github.com/AKCURIN/-Python-/blob/d14df3c1da64706d9e5ea084edb74be83267323d/Advanced%20course/2.2.6)
+
 ### Часть 4
 
 4.2.6[Вложенные списки](https://github.com/AKCURIN/-Python-/blob/900b5652f09485fe6b31502f44807baa005c4b76/Advanced%20course/4.2.6)
