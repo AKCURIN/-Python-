@@ -148,6 +148,8 @@
 
 2.1.7.6[Standard American Convention](https://github.com/AKCURIN/-Python-/blob/438149b2473f2c2c68658d20937155f61bc162e0/Advanced%20course/2.1.7)
 
+2.2.1[Координатные четверти](https://github.com/AKCURIN/-Python-/blob/6f97e6e960ba074c1e3c9fd5249fde203c5d8222/Advanced%20course/2.2.1)
+
 ### Часть 4
 
 4.2.6[Вложенные списки](https://github.com/AKCURIN/-Python-/blob/900b5652f09485fe6b31502f44807baa005c4b76/Advanced%20course/4.2.6)
