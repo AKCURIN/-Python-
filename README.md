@@ -159,3 +159,7 @@
 ### Часть 4
 
 4.2.6[Вложенные списки](https://github.com/AKCURIN/-Python-/blob/900b5652f09485fe6b31502f44807baa005c4b76/Advanced%20course/4.2.6)
+
+### Часть 10
+
+10.2.7[СЛОВАРИ | Код Морзе](https://github.com/AKCURIN/-Python-/blob/fe3018b2a42b45f4b00abe390bd60982bb4ae5b7/Advanced%20course/10.2.7)
