@@ -1,0 +1,115 @@
+import numpy as np
+
+def print_matrix(y):
+    for row in y:
+        for item in row:
+            print("{0:.2f}".format(item), end=" ")
+        print()
+
+def u(x, t):
+    return x**2 * t**2 + 2 * x * t + x + 2
+
+def f(x, t):
+    return 2 * x**2 * t + 2 * x - 2 * t**2
+
+def u0(x):
+    return x + 2
+
+def m1():
+    return 2
+
+def m2(t):
+    return t**2 + 2 * t + 3
+
+def boundary_fill(y, h, tay, N, M):
+    for i in range(N + 1):
+        y[i][0] = u0(i * h)
+    for j in range(1, M + 1):
+        y[0][j] = m1()
+        y[N][j] = m2(j * tay)
+
+def maximum_difference(y, u, N, M):
+    max_diff = 0
+    for i in range(N + 1):
+        for j in range(M + 1):
+            if max_diff < abs((y[i][j] - u[i][j]) / y[i][j]):
+                max_diff = abs((y[i][j] - u[i][j]) / y[i][j])
+    return max_diff
+
+def method_progonki(y, N, M, h, tay):
+    for j in range(M):
+        alf = np.zeros(N + 1)
+        bet = np.zeros(N + 1)
+        bet[1] = y[0][j + 1]
+        alf[1] = 0
+        for i in range(1, N):
+            A = tay / (h * h)
+            B = tay / (h * h)
+            C = 1 + 2.0 * tay / (h * h)
+            F = y[i][j] + tay * f(i * h, tay * (j + 0.5))
+            alf[i + 1] = B / (C - A * alf[i])
+            bet[i + 1] = (F + A * bet[i]) / (C - A * alf[i])
+        for i in range(N, 1, -1):
+            y[i - 1][j + 1] = y[i][j + 1] * alf[i] + bet[i]
+
+def derivative_function_fill(y, h, tay, N, M):
+    for i in range(N + 1):
+        for j in range(M + 1):
+            y[i][j] = u(h * i, j * tay)
+
+def progon05(y, h, tay, N, M):
+    for j in range(M):
+        alf = np.zeros(N + 1)
+        bet = np.zeros(N + 1)
+        bet[1] = y[0][j + 1]
+        alf[1] = 0
+        for i in range(1, N):
+            A = tay / (2 * (h * h))
+            C = 1 + tay / (h * h)
+            B = tay * 0.5 / (h * h)
+            F = (1 - (tay / (h * h))) * y[i][j] + (tay / (2 * (h * h)) * (y[i - 1][j] + y[i + 1][j])) + tay * f(i * h, tay * (j + 0.5))
+            alf[i + 1] = B / (C - A * alf[i])
+            bet[i + 1] = (F + A * bet[i]) / (C - A * alf[i])
+        for i in range(N, 1, -1):
+            y[i - 1][j + 1] = y[i][j + 1] * alf[i] + bet[i]
+
+def main():
+    N_0, M_0 = 10, 200
+    N_1, M_1 = 10, 100
+    N_05, M_05 = 100, 100
+    
+    y_0 = np.zeros((N_0 + 1, M_0 + 1))
+    ur_0 = np.zeros((N_0 + 1, M_0 + 1))
+    y_1 = np.zeros((N_1 + 1, M_1 + 1))
+    ur_1 = np.zeros((N_1 + 1, M_1 + 1))
+    y_05 = np.zeros((N_05 + 1, M_05 + 1))
+    ur_05 = np.zeros((N_05 + 1, M_05 + 1))
+    
+    h_0, tay_0 = 1.0 / N_0, 1.0 / M_0
+    h_1, tay_1 = 1.0 / N_1, 1.0 / M_1
+    h_05, tay_05 = 1.0 / N_05, 1.0 / M_05
+    
+    print("Sigma 0 N={}, M={}".format(N_0, M_0))
+    boundary_fill(y_0, h_0, tay_0, N_0, M_0)
+    for j in range(M_0):
+        for i in range(1, N_0):
+            y_0[i][j + 1] = tay_0 * (y_0[i - 1][j] - 2 * y_0[i][j] + y_0[i + 1][j]) / (h_0 ** 2) + y_0[i][j] + tay_0 * f(i * h_0, tay_0 * (j + 0.5))
+    derivative_function_fill(ur_0, h_0, tay_0, N_0, M_0)
+    print("z =", maximum_difference(y_0, ur_0, N_0, M_0))
+    print()
+
+    print("Sigma 1 N={}, M={}".format(N_1, M_1))
+    boundary_fill(y_1, h_1, tay_1, N_1, M_1)
+    method_progonki(y_1, N_1, M_1, h_1, tay_1)
+    derivative_function_fill(ur_1, h_1, tay_1, N_1, M_1)
+    print("z =", maximum_difference(y_1, ur_1, N_1, M_1))
+    print()
+
+    print("Sigma 0.5 N={}, M={}".format(N_05, M_05))
+    boundary_fill(y_05, h_05, tay_05, N_05, M_05)
+    progon05(y_05, h_05, tay_05, N_05, M_05)
+    derivative_function_fill(ur_05, h_05, tay_05, N_05, M_05)
+    print("z =", maximum_difference(y_05, ur_05, N_05, M_05))
+
+if __name__ == "__main__":
+    main()
